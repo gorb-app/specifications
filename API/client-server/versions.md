@@ -1,4 +1,4 @@
-GET /v1/versions
+GET /versions
 
 ---
 
