@@ -38,7 +38,7 @@ No request parameters or request body.
         },
         {
             "email_address": "moderator@gorbatron.org",
-            "gorb_id": "@moderator.gorbatron.org",
+            "gorb_id": "@moderator:gorbatron.org",
             "role": "Content Moderator"
         }
     ],
