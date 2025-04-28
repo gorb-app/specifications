@@ -8,12 +8,6 @@ Authenticates the user, and issues an access token for future requests.
 
 ## Request
 
-No request parameters or request body.
-
----
-
-### 200 response
-
 |Name|Type|Description|
 |-|-|-|
 |identifier|string|User's gorb ID. One of identifier and email **must** be implemented|
