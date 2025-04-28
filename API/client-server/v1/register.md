@@ -32,7 +32,7 @@ Registers the user, and issues an access token for future requests.
 |-|-|
 |200|Registration successful|
 |400|The post request included poorly formated data|
-|403|Gorb ID not available, email already in use, or password doesn't meet the minimum security requirements|
+|401|Signups are disabled, gorb ID not available, email already in use, or password doesn't meet the minimum security requirements|
 
 ---
 
@@ -54,10 +54,11 @@ Registers the user, and issues an access token for future requests.
 
 ---
 
-### 403
+### 401
 
 |Name|Type|Description|
 |-|-|-|
+|signups_enabled|bool|Does the server have signups enabled?| 
 |gorb_id_valid|bool|Is the given gorb ID even valid?| 
 |gorb_id_available|bool|Is the given gorb ID available?| 
 |email_valid|bool|Is the given email valid?| 
@@ -68,7 +69,8 @@ Registers the user, and issues an access token for future requests.
 |password_numbers|bool|If enforced by the server, is there enough numbers in the password?| 
 
 ```json
-{
+{   
+    "signups_enabled": true,
     "gorb_id_valid": true,
     "gorb_id_available": true,
     "email_valid": true,
