@@ -27,8 +27,9 @@ No request parameters or request body.
         "example.feature": true
     },
     "versions": [
-        "0.0.2",
-        "1",
+        "2",
+        "3",
+        "4",
     ]
 }
 ```
