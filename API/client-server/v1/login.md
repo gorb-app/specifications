@@ -9,7 +9,7 @@ Authenticates the user, and issues an access token for future requests.
 ## Request
 
 | Name        | Type   | Description                                                                                                    |
-| ----------- | ------ | -------------------------------------------------------------------------------------------------------------- |
+|-------------|--------|----------------------------------------------------------------------------------------------------------------|
 | identifier  | string | User's gorb ID. One of identifier and email **must** be implemented                                            |
 | email       | string | User's email. One of identifier and email **must** be implemented                                              |
 | password    | string | **Required**: The user's password (we need to figure out how exactly we're hashing + salting it on the client) |
@@ -28,7 +28,7 @@ Authenticates the user, and issues an access token for future requests.
 ## Responses
 
 | Status | Description                                    |
-| ------ | ---------------------------------------------- |
+|--------|------------------------------------------------|
 | 200    | Authentication successful                      |
 | 400    | The post request included poorly formated data |
 | 403    | Part of the cridentials are invalid.           |
@@ -38,7 +38,7 @@ Authenticates the user, and issues an access token for future requests.
 ### 200
 
 | Name         | Type   | Description                                                                 |
-| ------------ | ------ | --------------------------------------------------------------------------- |
+|--------------|--------|-----------------------------------------------------------------------------|
 | access_token | string | **Required**: The access token that will be used for further authentication |
 | user_id      | string | **Required**: The full gorb ID for the account                              |
 | expires_in   | int    | How many seconds until the token expires and is invalidated                 |
