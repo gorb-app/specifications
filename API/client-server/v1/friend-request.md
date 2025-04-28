@@ -2,7 +2,7 @@ POST /v1/friend-request
 
 ---
 
-Sends a friend request to the given user.
+Sends a friend request to the given user. Friend requests can be accepted by having the given user send a friend request back.
 
 ---
 
