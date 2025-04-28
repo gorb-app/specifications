@@ -18,7 +18,7 @@ No request parameters or request body.
 
 |Name|Type|Description|
 |-|-|-|
-|unstable_features|string:bool|**Required**: Unstable features that are supported by the server. Features not listed here indicate that a feature isn't supported.|
+|unstable_features|string:bool|Unstable features that are supported by the server. Features not listed here indicate that a feature isn't supported.|
 |versions|[string]|**Required**: The supported protocol versions
 
 ```json
