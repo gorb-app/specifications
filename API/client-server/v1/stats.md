@@ -18,9 +18,9 @@ No request parameters or request body.
 
 |Name|Type|Description|
 |-|-|-|
-|accounts|int|**Required**: The number of signed up accounts|
-|uptime|int|**Required**: How many seconds the server has been running|
-|version|string|**"Required**: The current server version|
+|accounts|int|The number of signed up accounts|
+|uptime|int|How many seconds the server has been running|
+|version|string|The current server version|
 |build_number|string|The hash of the last commit in the git repo? (maybe we want to define this some other way)|
 
 ```json
