@@ -41,15 +41,15 @@ Registers the user, and issues an access token for future requests.
 | Name          | Type   | Description                                                                                                                                      |
 |---------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | access_token  | string | **Required**: The JWT access token that will be used for further authentication.                                                                 |
-| user_id       | string | **Required**: The full gorb ID for the account.                                                                                                  |
-| uuid          | string | **Required**: The account's UUID                                                                                                                 |
+| user_id       | string | **Required**: The account's local gorb ID.                                                                                                       |
+| uuid          | string | **Required**: The account's UUID.                                                                                                                |
 | expires_in    | int    | How many seconds until the token expires and is invalidated.                                                                                     |
 | refresh_token | string | The JWT refresh token that will be used to refresh the access token. Required for avoiding users having to log in after access token expiration. |
 
 ```json
 {
   "access_token": "13aa5fe2ae5874fb9616e68c25632a146552584ac238a3e4ede08174fbfc4f45",
-  "user_id": "@radial_4740@gorb.app",
+  "user_id": "radial_4740",
   "uuid": "dcb445f1-16e7-4cd9-ac19-af07acaeb865",
   "expires_in": 86400,
   "refresh_token": "8556a85b8912a78572cd67b21350e188039f656a0781dab20fab7b72a11d2a93"
