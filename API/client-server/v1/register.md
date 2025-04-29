@@ -8,8 +8,8 @@ Registers the user, and issues an access token for future requests.
 
 ## Request
 
-| Name        | Type   | Description                                                                                                    |
-| ----------- | ------ | -------------------------------------------------------------------------------------------------------------- |
+| Name        | Type   | Description                                                                                                     |
+|-------------|--------|-----------------------------------------------------------------------------------------------------------------|
 | identifier  | string | **Required** User's desired ID.                                                                                 |
 | email       | string | **Required** User's email.                                                                                      |
 | password    | string | **Required**: The user's password (we need to figure out how exactly we're hashing + salting it on the client). |
@@ -29,7 +29,7 @@ Registers the user, and issues an access token for future requests.
 ## Responses
 
 | Status | Description                                                                                                                    |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------ |
+|--------|--------------------------------------------------------------------------------------------------------------------------------|
 | 200    | Registration successful.                                                                                                       |
 | 400    | The post request included poorly formated data.                                                                                |
 | 403    | Signups are disabled, gorb ID not available, email already in use, or password doesn't meet the minimum security requirements. |
@@ -39,9 +39,10 @@ Registers the user, and issues an access token for future requests.
 ### 200
 
 | Name          | Type   | Description                                                                                                                                      |
-| ------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------     |
+|---------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | access_token  | string | **Required**: The JWT access token that will be used for further authentication.                                                                 |
 | user_id       | string | **Required**: The full gorb ID for the account.                                                                                                  |
+| uuid          | string | **Required**: The account's UUID                                                                                                                 |
 | expires_in    | int    | How many seconds until the token expires and is invalidated.                                                                                     |
 | refresh_token | string | The JWT refresh token that will be used to refresh the access token. Required for avoiding users having to log in after access token expiration. |
 
@@ -49,6 +50,7 @@ Registers the user, and issues an access token for future requests.
 {
   "access_token": "13aa5fe2ae5874fb9616e68c25632a146552584ac238a3e4ede08174fbfc4f45",
   "user_id": "@radial_4740:gorb.app",
+  "uuid": "dcb445f1-16e7-4cd9-ac19-af07acaeb865",
   "expires_in": 86400,
   "refresh_token": "8556a85b8912a78572cd67b21350e188039f656a0781dab20fab7b72a11d2a93"
 }
@@ -59,7 +61,7 @@ Registers the user, and issues an access token for future requests.
 ### 403
 
 | Name                        | Type | Description                                                                    |
-| --------------------------- | ---- | ------------------------------------------------------------------------------ |
+|-----------------------------|------|--------------------------------------------------------------------------------|
 | signups_enabled             | bool | Does the server have signups enabled?                                          |
 | gorb_id_valid               | bool | Is the given gorb ID even valid?                                               |
 | gorb_id_available           | bool | Is the given gorb ID available?                                                |
