@@ -10,18 +10,18 @@ No request parameters or request body.
 
 ## Responses
 
-| Status | Description                     |
-|--------|---------------------------------|
-| 200    | The current stats of the server |
+| Status | Description                      |
+| ------ | -------------------------------- |
+| 200    | The current stats of the server. |
 
 ### 200 response
 
-| Name         | Type   | Description                                                                                |
-|--------------|--------|--------------------------------------------------------------------------------------------|
-| accounts     | int    | The number of signed up accounts                                                           |
-| uptime       | int    | How many seconds the server has been running                                               |
-| version      | string | The current server version                                                                 |
-| build_number | string | The hash of the last commit in the git repo? (maybe we want to define this some other way) |
+| Name         | Type   | Description                                                                                 |
+| ------------ | ------ | ------------------------------------------------------------------------------------------- |
+| accounts     | int    | The number of signed up accounts.                                                           |
+| uptime       | int    | How many seconds the server has been running.                                               |
+| version      | string | The current server version.                                                                 |
+| build_number | string | The hash of the last commit in the git repo? (maybe we want to define this some other way). |
 
 ```json
 {
