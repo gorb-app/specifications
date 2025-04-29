@@ -10,10 +10,10 @@ Registers the user, and issues an access token for future requests.
 
 | Name        | Type   | Description                                                                                                    |
 | ----------- | ------ | -------------------------------------------------------------------------------------------------------------- |
-| identifier  | string | **Required** User's desired ID                                                                                 |
-| email       | string | **Required** User's email                                                                                      |
-| password    | string | **Required**: The user's password (we need to figure out how exactly we're hashing + salting it on the client) |
-| device_name | string | Name to help the user identify the device in their session list                                                |
+| identifier  | string | **Required** User's desired ID.                                                                                 |
+| email       | string | **Required** User's email.                                                                                      |
+| password    | string | **Required**: The user's password (we need to figure out how exactly we're hashing + salting it on the client). |
+| device_name | string | Name to help the user identify the device in their session list.                                                |
 
 ```json
 {
@@ -28,29 +28,29 @@ Registers the user, and issues an access token for future requests.
 
 ## Responses
 
-| Status | Description                                                                                                                   |
-| ------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| 200    | Registration successful                                                                                                       |
-| 400    | The post request included poorly formated data                                                                                |
-| 403    | Signups are disabled, gorb ID not available, email already in use, or password doesn't meet the minimum security requirements |
+| Status | Description                                                                                                                    |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| 200    | Registration successful.                                                                                                       |
+| 400    | The post request included poorly formated data.                                                                                |
+| 403    | Signups are disabled, gorb ID not available, email already in use, or password doesn't meet the minimum security requirements. |
 
 ---
 
 ### 200
 
-| Name          | Type   | Description                                                                                                                                  |
-| ------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| access_token  | string | **Required**: The access token that will be used for further authentication                                                                  |
-| user_id       | string | **Required**: The full gorb ID for the account                                                                                               |
-| expires_in    | int    | How many seconds until the token expires and is invalidated                                                                                  |
-| refresh_token | string | The refresh token that will be used to refresh the access token. Required for avoiding users having to log in after access token expiration. |
+| Name          | Type   | Description                                                                                                                                      |
+| ------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------     |
+| access_token  | string | **Required**: The JWT access token that will be used for further authentication.                                                                 |
+| user_id       | string | **Required**: The full gorb ID for the account.                                                                                                  |
+| expires_in    | int    | How many seconds until the token expires and is invalidated.                                                                                     |
+| refresh_token | string | The JWT refresh token that will be used to refresh the access token. Required for avoiding users having to log in after access token expiration. |
 
 ```json
 {
-  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJAcmFkaWFsXzQ3NDA6Z29yYi5hcHAiLCJpZGVudGlmaWVyIjoicmFkaWFsXzQ3NDAiLCJpYXQiOjE3NDM4ODgyNDAsImV4cCI6MTc0NTk2MTg0MH0.MZsOfeOm98K2sgtJ3hIDy0iyX27tDJRgW5iSayBJIDM",
+  "access_token": "13aa5fe2ae5874fb9616e68c25632a146552584ac238a3e4ede08174fbfc4f45",
   "user_id": "@radial_4740:gorb.app",
   "expires_in": 86400,
-  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJAcmFkaWFsXzQ3NDA6Z29yYi5hcHAiLCJpZGVudGlmaWVyIjoicmFkaWFsXzQ3NDAiLCJpYXQiOjE3NDM4ODgyNDAsImV4cCI6MTc0NjQ4MDI0MH0.OvUDelrhELNBhizvAj7wm13YpDLYluI4sPeBmT5sPUg"
+  "refresh_token": "8556a85b8912a78572cd67b21350e188039f656a0781dab20fab7b72a11d2a93"
 }
 ```
 
