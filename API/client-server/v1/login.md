@@ -32,6 +32,7 @@ Authenticates the user, and issues an access token for future requests.
 | 200    | Authentication successful.                      |
 | 400    | The post request included poorly formated data. |
 | 403    | Part of the cridentials are invalid.            |
+| 500    | An unhandled error occured.                     |
 
 ---
 

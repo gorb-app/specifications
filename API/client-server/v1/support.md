@@ -14,6 +14,7 @@ No request parameters or request body.
 |--------|-------------------------------------------------|
 | 200    | Support information for the server.             |
 | 404    | No contact information has been made available. |
+| 500    | An unhandled error occured.                     |
 
 ### 200 response
 

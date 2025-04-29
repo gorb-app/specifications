@@ -33,6 +33,7 @@ Registers the user, and issues an access token for future requests.
 | 200    | Registration successful.                                                                                                       |
 | 400    | The post request included poorly formated data.                                                                                |
 | 403    | Signups are disabled, gorb ID not available, email already in use, or password doesn't meet the minimum security requirements. |
+| 500    | An unhandled error occured.                                                                                                    |
 
 ---
 

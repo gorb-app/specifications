@@ -34,3 +34,4 @@ Sends a friend request to the given user. Friend requests can be accepted by hav
 | 400    | The post request included poorly formated data.                               |
 | 401    | The recipient is not accepting friend requests from the sender at the moment. |
 | 403    | Invalid access token.                                                         |
+| 500    | An unhandled error occured.                                                   |
