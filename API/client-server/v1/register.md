@@ -49,7 +49,7 @@ Registers the user, and issues an access token for future requests.
 ```json
 {
   "access_token": "13aa5fe2ae5874fb9616e68c25632a146552584ac238a3e4ede08174fbfc4f45",
-  "user_id": "@radial_4740:gorb.app",
+  "user_id": "@radial_4740@gorb.app",
   "uuid": "dcb445f1-16e7-4cd9-ac19-af07acaeb865",
   "expires_in": 86400,
   "refresh_token": "8556a85b8912a78572cd67b21350e188039f656a0781dab20fab7b72a11d2a93"

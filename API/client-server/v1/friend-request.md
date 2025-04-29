@@ -17,7 +17,7 @@ Sends a friend request to the given user. Friend requests can be accepted by hav
 ```json
 {
     "access_token": "gwLhWXD9wrqL3DwxXZ0VHUeOjr8am1yO",
-    "identifier": "@radial_4740:gorb.app",
+    "identifier": "@radial_4740@gorb.app",
     "message": "Heyo, Kira here"
 }
 ```

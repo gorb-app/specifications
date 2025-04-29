@@ -47,7 +47,7 @@ Authenticates the user, and issues an access token for future requests.
 ```json
 {
   "access_token": "35e404d160b0eac766cb85cf513670baa627d1e918c4813c3f099e31de300b63",
-  "user_id": "@radial_4740:gorb.app",
+  "user_id": "@radial_4740@gorb.app",
   "expires_in": 86400,
   "refresh_token": "d9ce91b7b643d5580ea605ad09ba1e13aef704c412194c00c592b96a62049587"
 }
