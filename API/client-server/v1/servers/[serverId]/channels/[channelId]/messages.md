@@ -1,5 +1,5 @@
 #### <b><span style="color: lightgreen;">GET</span> <code>/v1/servers/{serverId}/channels/{channelId}/messages</code></b>
-Retrieves all [[Message|messages]] in a [[Guild]].
+Retrieves all [messages](../../../../../../models/Message.md) in a [Guild](../../../../../../models/Guild.md).
 ##### Responses
 
 | Status | Description                                               |

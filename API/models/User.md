@@ -1,4 +1,5 @@
-Represents a user of an [[Instance]].
+## User Object
+Represents a user of an [Instance](Instance.md#instance-object).
 
 **Structure**
 

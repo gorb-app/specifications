@@ -1,5 +1,5 @@
 ## Emoji Object
-Represents an emoji in a [[Guild]].
+Represents an emoji in a [Guild](Guild.md).
 
 **Structure**
 
