@@ -1,5 +1,5 @@
 ## Channel Object
-Represents a channel in a [[Guild#Guild Object|Guild]].
+Represents a channel in a [Guild](Guild.md).
 
 **Structure**
 
