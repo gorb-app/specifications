@@ -1,5 +1,5 @@
 #### <b><span style="color: lightgreen;">GET</span> <code>/v1/servers/{serverId}/channels/{channelId}/messages</code></b>
-Retrieves all [messages](../../../../../../models/Message.md) in a [Guild](../../../../../../models/Guild.md).
+Retrieves all [messages](../../../../../../models/Message.md#message-object) in a [Guild](../../../../../../models/Guild.md#guild-object).
 ##### Responses
 
 | Status | Description                                               |
@@ -11,9 +11,9 @@ Retrieves all [messages](../../../../../../models/Message.md) in a [Guild](../..
 | 500    | An unhandled error occurred.                              |
 
 ###### 200
-Returns a [[Message]] object.
+Returns a [Message](../../../../../../models/Message.md#message-object) object.
 #### <b><span style="color: lightgreen;">GET</span> <code>/v1/servers/{serverId}/channels/{channelId}/messages/{messageId}</code></b>
-Retrieves a [[Message]] from a channel.
+Retrieves a [Message](../../../../../../models/Message.md#message-object) from a [Channel]((../../../../../../models/Channel.md#channel-object)).
 ##### Responses
 
 | Status | Description                                               |
@@ -25,4 +25,4 @@ Retrieves a [[Message]] from a channel.
 | 500    | An unhandled error occurred.                              |
 
 ###### 200
-Returns a [[Message]] object.
+Returns a [Message](../../../../../../models/Message.md#message-object) object.

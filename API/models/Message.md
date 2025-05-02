@@ -1,18 +1,18 @@
 ## Message Object
-Represents a message in a [Channel](Channel.md)/DM.
+Represents a message in a [Channel](Channel.md#channel-object)/DM.
 
 **Structure**
 
-| Field       | Type                                                           | Description                                     |
-| ----------- | -------------------------------------------------------------- | ----------------------------------------------- |
-| id          | string                                                         | ID of the message                               |
-| channel_id  | string                                                         | ID of the channel the message was sent it       |
-| author      | [User](User.md#user-object) object                             | Author of the message                           |
-| content     | string                                                         | Content of the message                          |
-| created_at  | timestamp                                                      | When the message was sent                       |
-| edited      | timestamp \| null                                              | When this message was edited, null if it hasn't |
-| attachments | array of [Attachment](Attachment.md#attachment-object) objects | Files attached with the message, empty if none  |
-| embeds      | array of [Embed](Embed.md#embed-object) objects                | Embeds sent with the message, empty if none     |
+| Field       | Type                                              | Description                                     |
+| ----------- | ------------------------------------------------- | ----------------------------------------------- |
+| id          | string                                            | ID of the message                               |
+| channel_id  | string                                            | ID of the channel the message was sent it       |
+| author      | [User](User.md#user-object) object                | Author of the message                           |
+| content     | string                                            | Content of the message                          |
+| created_at  | timestamp                                         | When the message was sent                       |
+| edited      | timestamp \| null                                 | When this message was edited, null if it hasn't |
+| attachments | array of [Attachment](#attachment-object) objects | Files attached with the message, empty if none  |
+| embeds      | array of [Embed](#embed-object) objects           | Embeds sent with the message, empty if none     |
 **Example Message**
 ```json
 {
@@ -33,15 +33,15 @@ Represents a message in a [Channel](Channel.md)/DM.
 ```
 
 ## Embed Object
-Represents an embed in a [[#Message Object|Message]].
+Represents an embed in a [Message](Message.md#message-object).
 
 **Structure**
 
-| Field  | Type                                      | Description         |
-| ------ | ----------------------------------------- | ------------------- |
-| title  | string                                    | Title of the embed  |
-| color  | integer                                   | Color of the embed  |
-| fields | array of [[#Field Object\|Field]] objects | Fields of the embed |
+| Field  | Type                                    | Description         |
+| ------ | --------------------------------------- | ------------------- |
+| title  | string                                  | Title of the embed  |
+| color  | integer                                 | Color of the embed  |
+| fields | array of [Field](#field-object) objects | Fields of the embed |
 
 **Example Embed**
 ```json
@@ -56,7 +56,7 @@ Represents an embed in a [[#Message Object|Message]].
 }
 ```
 ### Field Object
-Represents a field in an [[#Embed Object|Embed]].
+Represents a field in an [Embed](#embed-object).
 **Structure**
 
 | Field  | Type    | Description                                           |
@@ -72,7 +72,7 @@ Represents a field in an [[#Embed Object|Embed]].
 }
 ```
 ## Attachment Object
-Represents an attachment in a [[#Message Object|Message]].
+Represents an attachment in a [Message](#message-object).
 
 **Structure**
 
