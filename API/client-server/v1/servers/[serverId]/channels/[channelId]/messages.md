@@ -13,7 +13,7 @@ Retrieves all [messages](../../../../../../models/Message.md#message-object) in 
 ###### 200
 Returns a [Message](../../../../../../models/Message.md#message-object) object.
 #### <b><span style="color: lightgreen;">GET</span> <code>/v1/servers/{serverId}/channels/{channelId}/messages/{messageId}</code></b>
-Retrieves a [Message](../../../../../../models/Message.md#message-object) from a [Channel]((../../../../../../models/Channel.md#channel-object)).
+Retrieves a [Message](../../../../../../models/Message.md#message-object) from a [Channel](../../../../../../models/Channel.md#channel-object).
 ##### Responses
 
 | Status | Description                                               |
